@@ -22,7 +22,10 @@ router.post('/register', function(req, res){
 	var username = req.body.username;
 	var password = req.body.password;
 	var password2 = req.body.password2;
-
+	var question = req.body.question;
+	var question2 = req.body.question2;
+	var question3 = req.body.question3;
+	
 	// Validation
 	req.checkBody('name', 'Name is required').notEmpty();
 	req.checkBody('email', 'Email is required').notEmpty();
@@ -30,7 +33,10 @@ router.post('/register', function(req, res){
 	req.checkBody('username', 'Username is required').notEmpty();
 	req.checkBody('password', 'Password is required').notEmpty();
 	req.checkBody('password2', 'Passwords do not match').equals(req.body.password);
-
+	req.checkBody('question', 'Answer to security question is required').notEmpty();
+	req.checkBody('question2', 'Answer to security question is required').notEmpty();
+	req.checkBody('question3', 'Answer to security question is required').notEmpty();
+	
 	var errors = req.validationErrors();
 
 	if(errors){
@@ -42,7 +48,10 @@ router.post('/register', function(req, res){
 			name: name,
 			email:email,
 			username: username,
-			password: password
+			password: password,
+			question: question,
+			question2: question2,
+			question3: question3
 		});
 
 		User.createUser(newUser, function(err, user){
