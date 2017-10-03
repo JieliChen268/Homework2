@@ -1,10 +1,21 @@
-# Homework2
-Toro-net Homework2
+# Node.js Loginapp
+
+This is a user login and registration app using Node.js, Express, Passport and Mongoose. It is part of the YouTube series [here](https://www.youtube.com/watch?v=Z1ktxiqyiLA)
+
+### Version
+1.1.0
+
+### Usage
 
 
-#1 Faisal and Mohammed push the interface to the repo. 
-#2 Jieli add functionality to Login Button.
-#3 Janani add functionality to login with guthub button
-#4 Sahil add functionality to remember me link
-#5 Sugandha add functionality to forgot password link
-#6 Carlos add functionality to register button
+### Installation
+
+Loginapp requires [Node.js](https://nodejs.org/) v4+ to run.
+
+```sh
+$ npm install
+```
+
+```sh
+$ npm start
+```
