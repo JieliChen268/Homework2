@@ -2,7 +2,7 @@
 Toro-net Homework2
 
 
-#1 Faisal and Mohammed push the interface to the repo.
+#1 Faisal and Mohammed push the interface to the repo. 
 #2 Jieli add functionality to Login Button.
 #3 Janani add functionality to login with guthub button
 #4 Sahil add functionality to remember me link
